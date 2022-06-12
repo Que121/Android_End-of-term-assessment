@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_tithle_layout" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="5dp"
+        android:text="选择志愿:"
+        android:textColor="@color/gray_222222"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_baoyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="保研"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_kaoyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="考研"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="出国"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="工作"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_workmyself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="创业"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/radio_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="二学位"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/radio_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/selector_radio"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:text="其他"
+            android:textColor="#FF222222"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/input_plant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_white_line_corner"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:hint="请输入目标执行计划"
+        android:maxLength="9"
+        android:minHeight="80dp"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+
+        android:textColor="@color/gray_222222"
+        android:textColorHint="#cccccc"
+        android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/bnt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_selector_solid_blue_corner"
+            android:minWidth="120dp"
+            android:text="确认" />
+
+
+
+</LinearLayout>
